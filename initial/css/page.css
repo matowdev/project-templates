@@ -56,3 +56,51 @@ svg {
   font-size: var(--default-fs);
   color: var(--starry-night);
 }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+  max-width: var(--container-max-width);
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: var(--regular);
+  font-size: 48px;
+  line-height: 59px;
+}
+
+/* media queries, any-hover */
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

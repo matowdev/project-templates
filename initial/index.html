@@ -9,17 +9,67 @@
   <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="libs/bootstrap-v5.3.3/bootstrap.min.css">
-  <link rel="stylesheet" href="libs/tippy-v6.3.7/tippy.min.css">
   <!-- всевозможные css файлы, потом только style.css -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- -- -->
   <script src="libs/jquery-v3.7.1/jquery-3.7.1.min.js" defer></script>
   <script src="libs/bootstrap-v5.3.3/bootstrap.min.js" defer></script>
   <!-- всевозможные js файлы, потом только index.js -->
   <script src="js/index.js" defer></script>
+  <!-- -- -->
 </head>
 
 <body class="page">
-  <h1>Проверка шрифтов..</h1>
+  <!-- потом.. class="visually-hidden" -->
+  <h1 class="page__title">Проверка шрифтов..</h1>
+
+  <header class="header page__header" id="header" aria-label="Верхний колонтитул страницы (шапка сайта)">
+    <div class="container header__container" aria-labelledby="header">
+      <a class="logo header__logo">
+        <img src="img/..." alt="Логотип: ???" width="..." height="...">
+      </a>
+      <nav class="header__nav">
+        <h2 class="visually-hidden section-title header__nav-title">Навигация по сайту:</h2>
+        <ul class="reset-list header__list" title="Главное меню">
+          <li class="header__item"><a class="header__item-link" href="#"></a></li>
+          <li class="header__item"><a class="header__item-link" href="#"></a></li>
+          <li class="header__item"><a class="header__item-link" href="#"></a></li>
+          <li class="header__item"><a class="header__item-link" href="#"></a></li>
+          <li class="header__item"><a class="header__item-link" href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main page__main" aria-label="Контент страницы">
+    <!-- 1. -->
+    <section class="hero main__hero" id="hero" aria-label="Секция: Презентация">
+      <div class="container hero__container">
+        <div class="hero__wrap">
+          <div class="hero__content">
+            <h2 class="hero__content-title">...</h2>
+            <p class="hero__content-text">...</p>
+          </div>
+          <div class="hero__img"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 2. -->
+    <section class="about main__about" id="about" aria-label="Секция: О нас">
+      <div class="container about__container">
+        <div class="about__wrap">
+          <h2 class="section-title about__title">О&nbsp;нас</h2>
+          <p class="text about__text">...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer page__footer" aria-label="Нижний колонтитул страницы (подвал сайта)">
+    <div class="container footer__container">
+      <div class="footer__wrap"></div>
+    </div>
+  </footer>
 </body>
 
 </html>

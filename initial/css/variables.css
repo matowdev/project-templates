@@ -1,6 +1,12 @@
 :root {
   /* sizes */
   --page-min-width: 320px;
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+
+  /* borders */
+  --main-radius: 32px;
+  --form-radius: 24px;
 
   /* fonts */
   --open-sans: "Open Sans";
@@ -14,6 +20,7 @@
   /* extra-bold может и не быть */
   --extra-bold: 800;
   --default-fs: 16px;
+  --default-lh: 32px;
 
   /* colors */
   --black: #000;
@@ -28,4 +35,15 @@
 
   /* transitions */
   --short: 0.3s;
+}
+
+/* media queries */
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+    --main-radius: 16px;
+    --default-fs: 14px;
+    --default-lh: 28px;
+  }
 }
