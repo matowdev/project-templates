@@ -57,6 +57,12 @@ svg {
   color: var(--starry-night);
 }
 
+.page__title {
+  margin-bottom: 20px;
+  font-weight: var(--bold);
+  text-align: center;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -83,7 +89,6 @@ svg {
 }
 
 .section-title {
-  margin-top: 0;
   margin-bottom: 20px;
   font-weight: var(--regular);
   font-size: 48px;
